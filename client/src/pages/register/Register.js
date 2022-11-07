@@ -19,10 +19,11 @@ const Register = ({ history }) => {
     "address": account,
     "username": username
   });
+  console.log(data)
   
   var config = {
     method: 'post',
-    url: 'https://polyess-listner.herokuapp.com/register',
+    url: 'http://7f1c-2401-4900-1cc8-ecc8-90ff-f988-4c44-ad6.ngrok.io/register',
     headers: { 
       'Content-Type': 'application/json'
     },

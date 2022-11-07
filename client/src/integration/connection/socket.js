@@ -1,5 +1,7 @@
 import io from 'socket.io-client';
-const URL = 'https://polyess-socket.herokuapp.com/';
+const dotenv = require("dotenv");
+dotenv.config()
+const URL = process.env.SOCKET_API;
 const socket = io(URL);
 var mySocketId;
 socket.on("createNewGame", statusUpdate => {

@@ -15,7 +15,7 @@ class ChessPiece {
             this.squareThisPieceIsOn = newSquare;
             newSquare.setPiece(this);
         }
-        const isNewSquareDifferent = this.squareThisPieceIsOn.x != newSquare.x || this.squareThisPieceIsOn.y != newSquare.y;
+        const isNewSquareDifferent = this.squareThisPieceIsOn.x !== newSquare.x || this.squareThisPieceIsOn.y !== newSquare.y;
         if (isNewSquareDifferent) {
             this.squareThisPieceIsOn = newSquare;
             newSquare.setPiece(this);

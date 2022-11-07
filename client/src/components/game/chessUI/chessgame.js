@@ -245,7 +245,7 @@ const ChessGameWrapper = (props) => {
 
 
     // get the gameId from the URL here and pass it to the chessGame component as a prop. 
-    const domainName = 'https://polyess.netlify.app'
+    const domainName = 'http://localhost:3000'
     const color = React.useContext(ColorContext)
     const { gameid,mode,addr,amount,nft } = useParams()
     const [play] = useSound(chessMove);

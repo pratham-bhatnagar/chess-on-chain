@@ -20,7 +20,7 @@ function Nft(props) {
   const params = useParams();
   const [nftData, setNftData] = useState([]);
   useEffect(() => {
-    const url = "https://polyess-listner.herokuapp.com/nft";
+    const url = "http://7f1c-2401-4900-1cc8-ecc8-90ff-f988-4c44-ad6.ngrok.io/nft";
 
     const requestOptions = {
       method: "POST",
